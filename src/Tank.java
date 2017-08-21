@@ -1,6 +1,6 @@
 public class Tank implements Movable
 {
-    private final int speed = 8;
+    private int speed = 8;
 
     private int x;
     private int y;

@@ -1,6 +1,6 @@
 public class Bullet implements Movable
 {
-    private final int speed = 4;
+    private int speed = 4;
 
     private int x;
     private int y;
