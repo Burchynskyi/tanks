@@ -40,7 +40,9 @@ public class ActionField extends JPanel
 //        tank.move();
 //        tank.move();
 //        tank.move();
+
         tank.move();
+
         tank.move();
         tank.turn(Direction.RIGHT);
         tank.fire();
@@ -113,7 +115,7 @@ public class ActionField extends JPanel
                 movable.updateY(-step);
                 break;
             case DOWN:
-                movable.updateY(-step);
+                movable.updateY(step);
                 break;
             case LEFT:
                 movable.updateX(-step);

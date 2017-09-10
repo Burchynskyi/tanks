@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Tank implements Movable
 {
     private int speed = 8;
@@ -36,10 +38,20 @@ public class Tank implements Movable
 
     public void moveRandom()
     {
+        Random r = new Random();
+        int i;
 
+        while (true)
+        {
+            i = r.nextInt(4) + 1;
+            direction = Direction.getById(i);
+
+            actionField.processTurn(this);
+            actionField.processMove(this);
+        }
     }
 
-    public void moveToQuadrant()
+    public void moveToQuadrant(int x, int y)
     {
 
     }
